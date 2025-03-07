@@ -92,20 +92,20 @@ BEGIN
     PUSHBUTTON "&กำหนดเอง...", IDC_TASKBARPROP_STARTMENUCUST, 192, 132, 53, 14
     AUTORADIOBUTTON "เมนูเริ่มต้นแบบคลาสสิก", IDC_TASKBARPROP_STARTMENUCLASSIC, 7, 175, 105, 10
     LTEXT "เมนูนี้ให้รูปลักษณ์และฟังก์ชันการทำงานแบบคลาสสิก", IDC_TASKBARPROP_STARTMENUCLASSICTEXT, 20, 185, 150, 24
-    PUSHBUTTON "&Customize...", IDC_TASKBARPROP_STARTMENUCLASSICCUST, 192, 172, 53, 14
+    PUSHBUTTON "&ปรับแต่ง...", IDC_TASKBARPROP_STARTMENUCLASSICCUST, 192, 172, 53, 14
 END
 
 IDD_TASKBARPROP_NOTIFY DIALOGEX 0, 0, 252, 218
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Notification Area"
+CAPTION "พื้นที่แจ้งเตือน"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     CONTROL "", IDC_TASKBARPROP_NOTIFICATIONBITMAP, "Static", SS_BITMAP | SS_SUNKEN | SS_CENTERIMAGE, 12, 6, 229, 24
-    GROUPBOX "Icons", IDC_STATIC, 6, 36, 240, 56
-    LTEXT "You can keep the notification area uncluttered by hiding icons that you have not clicked recently.", IDC_STATIC, 13, 48, 223, 16
-    AUTOCHECKBOX "&Hide inactive icons", IDC_TASKBARPROP_HIDEICONS, 13, 70, 125, 10
-    PUSHBUTTON "&Customize...", IDC_TASKBARPROP_ICONCUST, 188, 70, 50, 14
-    GROUPBOX "System icons", IDC_STATIC, 6, 99, 240, 56
+    GROUPBOX "ไอคอน", IDC_STATIC, 6, 36, 240, 56
+    LTEXT "คุณสามารถรักษาพื้นที่การแจ้งเตือนให้เป็นระเบียบได้โดยการซ่อนไอคอนที่คุณไม่ได้คลิกเมื่อเร็วๆ นี้", IDC_STATIC, 13, 48, 223, 16
+    AUTOCHECKBOX "&ซ่อนไอคอนที่ไม่ได้ใช้งาน", IDC_TASKBARPROP_HIDEICONS, 13, 70, 125, 10
+    PUSHBUTTON "&ปรับแต่ง...", IDC_TASKBARPROP_ICONCUST, 188, 70, 50, 14
+    GROUPBOX "ไอคอนระบบ", IDC_STATIC, 6, 99, 240, 56
     LTEXT "Select which system icons to always show.", IDC_STATIC, 13, 113, 223, 8
     AUTOCHECKBOX "Cloc&k", IDC_TASKBARPROP_CLOCK, 13, 127, 80, 10
     AUTOCHECKBOX "Show seconds", IDC_TASKBARPROP_SECONDS, 120, 127, 80, 10, WS_DISABLED
